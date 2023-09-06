@@ -1,0 +1,164 @@
+\newcommand{\transpose}{ \ensuremath{\intercal}}
+\newcommand{\energiaCinetica}{ \ensuremath{\mathfrak{T}}}
+\newcommand{\funcaoRayleigh}{ \ensuremath{\mathfrak{F}}}
+\newcommand{\energiaPotencial}{ \ensuremath{\mathfrak{P}}}
+\newcommand{\tracoMatriz}{ \ensuremath{\text{Tr}}}
+\newcommand{\sistemaInercial}{ \ensuremath{\mathcal{I}}}
+\newcommand{\sistemaMassaSismica}{ \ensuremath{\mathcal{M}}}
+\newcommand{\sistemaBaseSensor}{ \ensuremath{\mathcal{B}}}
+\newcommand{\sistemaECEF}{ \ensuremath{\mathcal{E}}}
+\newcommand{\matIdentidade}{ \ensuremath{\mathbb{I}}}
+\newcommand{\funcaoH}{ \ensuremath{\mathfrak{H}}}
+\newcommand{\funcaoL}{ \ensuremath{\mathfrak{L}}}
+\newcommand{\tempo}{ \ensuremath{t}}
+\newcommand{\vetorPosicao}{ \ensuremath{\mathbf{r}}}
+\newcommand{\posicaoSensor}{ \ensuremath{{}^{\glsentrysymbol{SistemaMassaSismica}}\mathbf{r}}}
+\newcommand{\posicaoNavegacao}{ \ensuremath{{}^{\glsentrysymbol{sistemaInercial}}\mathbf{r}}}
+\newcommand{\posicaoECEF}{ \ensuremath{{}^{\glsentrysymbol{sistemaECEF}}\mathbf{r}}}
+\newcommand{\velocidadeSensor}{ \ensuremath{{}^{\glsentrysymbol{SistemaMassaSismica}}\dot{\mathbf{r}}}}
+\newcommand{\velocidadeNavegacao}{ \ensuremath{{}^{\glsentrysymbol{sistemaInercial}}\dot{\mathbf{r}}}}
+\newcommand{\aceleracaoSensor}{ \ensuremath{{}^{\glsentrysymbol{SistemaMassaSismica}}\ddot{\mathbf{r}}}}
+\newcommand{\aceleracaoNavegacao}{ \ensuremath{{}^{\glsentrysymbol{sistemaInercial}}\ddot{\mathbf{r}}}}
+\newcommand{\mapRotacaoAngular}{ \ensuremath{\mathcal{W}}}
+\newcommand{\vetEuler}{ \ensuremath{\boldsymbol{\varTheta}}}
+\newcommand{\vetDerivadaEuler}{ \ensuremath{\dot{\boldsymbol{\varTheta}}}}
+\newcommand{\phiEuler}{ \ensuremath{\phi}}
+\newcommand{\thetaEuler}{ \ensuremath{\theta}}
+\newcommand{\psiEuler}{ \ensuremath{\psi}}
+\newcommand{\phiDerivadaEuler}{ \ensuremath{\dot\phi}}
+\newcommand{\thetaDerivadaEuler}{ \ensuremath{\dot\theta}}
+\newcommand{\psiDerivadaEuler}{ \ensuremath{\dot\psi}}
+\newcommand{\X}{ \ensuremath{X}}
+\newcommand{\Y}{ \ensuremath{Y}}
+\newcommand{\Z}{ \ensuremath{Z}}
+\newcommand{\q}{ \ensuremath{\mathbf{q}}}
+\newcommand{\qv}{ \ensuremath{\mathbf{q}_v}}
+\newcommand{\qi}{ \ensuremath{q}}
+\newcommand{\omegai}{ \ensuremath{\omega}}
+\newcommand{\vetOmega}{ \ensuremath{\boldsymbol{\omega}}}
+\newcommand{\prodQuat}{ \ensuremath{\otimes}}
+\newcommand{\potHadamard}{ \ensuremath{{\circ}}}
+\newcommand{\esperanca}{ \ensuremath{\mathbb{E}}}
+\newcommand{\conjuntoReais}{ \ensuremath{\mathbb{R}}}
+\newcommand{\conjuntoComplexos}{ \ensuremath{\mathbb{C}}}
+\newcommand{\conjuntoReaisPositivos}{ \ensuremath{\mathbb{R}}}
+\newcommand{\matRot}{ \ensuremath{\boldsymbol{\mathcal{R}}}}
+\newcommand{\timesOperator}{ \ensuremath{\times}}
+\newcommand{\perturbacao}{ \ensuremath{\delta}}
+\newcommand{\leftQuaternion}{ \ensuremath{\boldsymbol{\mathcal{S}}}}
+\newcommand{\rightQuaternion}{ \ensuremath{\boldsymbol{\mathcal{S}}_{r}}}
+\newcommand{\leftQuaternionQ}{ \ensuremath{\boldsymbol{\mathcal{Q}}}}
+\newcommand{\rightQuaternionQ}{ \ensuremath{\boldsymbol{\mathcal{Q}}_{r}}}
+\newcommand{\gravidade}{ \ensuremath{\mathrm{g}}}
+\newcommand{\basex}{ \ensuremath{\hat{\boldsymbol{x}}}}
+\newcommand{\basey}{ \ensuremath{\hat{\boldsymbol{y}}}}
+\newcommand{\basez}{ \ensuremath{\hat{\boldsymbol{z}}}}
+\newcommand{\longitude}{ \ensuremath{\varphi}}
+\newcommand{\latitude}{ \ensuremath{\lambda}}
+\newcommand{\altitude}{ \ensuremath{h}}
+\newcommand{\forcasTranslacionais}{ \ensuremath{\mathbf{F}}}
+\newcommand{\vecTorques}{ \ensuremath{\boldsymbol{\tau}}}
+\newcommand{\deformation}{ \ensuremath{\varepsilon}}
+\newcommand{\temperature}{ \ensuremath{T}}
+\newcommand{\complexi}{ \ensuremath{\imath}}
+\newcommand{\Ixm}{ \ensuremath{I_{x}^{\glsentrysymbol{SistemaMassaSismica}}}}
+\newcommand{\Iym}{ \ensuremath{I_{y}^{\glsentrysymbol{SistemaMassaSismica}}}}
+\newcommand{\Izm}{ \ensuremath{I_{z}^{\glsentrysymbol{SistemaMassaSismica}}}}
+\newcommand{\Ixs}{ \ensuremath{I_{x}^{\glsentrysymbol{SistemaSensor}}}}
+\newcommand{\Iys}{ \ensuremath{I_{y}^{\glsentrysymbol{SistemaSensor}}}}
+\newcommand{\Izs}{ \ensuremath{I_{z}^{\glsentrysymbol{SistemaSensor}}}}
+\newcommand{\comprimentoInicialFibra}{ \ensuremath{\bar{\ell}}}
+\newcommand{\massaSismica}{ \ensuremath{m_{\mathcal{M}}}}
+\newcommand{\massaBaseSensor}{ \ensuremath{m_{\mathcal{B}}}}
+\newcommand{\matrizInerciaSensor}{ \ensuremath{\mathbf{I}_{\mathcal{B}}}}
+\newcommand{\matrizInerciaMassa}{ \ensuremath{\mathbf{I}_{\mathcal{M}}}}
+\newcommand{\conexaoBase}{ \ensuremath{\mathbf{b}}}
+\newcommand{\conexaoMassaSismica}{ \ensuremath{\mathbf{m}}}
+\newcommand{\moduloYoung}{ \ensuremath{Y_{\mathrm{Si}}}}
+\newcommand{\wavelenghtFBG}{ \ensuremath{\lambda_\text{g}}}
+\newcommand{\wavelenghtLaser}{ \ensuremath{\lambda_\text{L}}}
+\newcommand{\electricField}{ \ensuremath{E}}
+\newcommand{\electricFieldVector}{ \ensuremath{\mathbf{e}}}
+\newcommand{\magneticField}{ \ensuremath{H}}
+\newcommand{\magneticFieldVector}{ \ensuremath{\mathbf{h}}}
+\newcommand{\propagationVector}{ \ensuremath{\boldsymbol{\kappa}}}
+\newcommand{\refractionIndex}{ \ensuremath{\mathrm{n}}}
+\newcommand{\waveNumber}{ \ensuremath{\kappa}}
+\newcommand{\lightVelocity}{ \ensuremath{\mathrm{c}}}
+\newcommand{\braggModulationPeriod}{ \ensuremath{\Lambda}}
+\newcommand{\magneticPermeability}{ \ensuremath{\mu}}
+\newcommand{\reflectivity}{ \ensuremath{r}}
+\newcommand{\transmittivity}{ \ensuremath{t}}
+\newcommand{\eletricDisplacementVector}{ \ensuremath{\mathbf{d}}}
+\newcommand{\magneticFluxVector}{ \ensuremath{\mathbf{b}}}
+\newcommand{\dieletricConstant}{ \ensuremath{\varepsilon}}
+\newcommand{\photodetector}{ \ensuremath{p^\text{pd}}}
+\newcommand{\transimpedanceTension}{ \ensuremath{v^\text{tr}}}
+\newcommand{\transimpedanceGain}{ \ensuremath{k^\text{tr}}}
+\newcommand{\photodetectorCurrent}{ \ensuremath{i^\text{pd}}}
+\newcommand{\photodetectorResponsivity}{ \ensuremath{k^\text{pd}}}
+\newcommand{\sourceCurrent}{ \ensuremath{i^\text{s}}}
+\newcommand{\osaReading}{ \ensuremath{p^{\glsentryname{osa}}}}
+\newcommand{\opticalSource}{ \ensuremath{s}}
+\newcommand{\gps}{GPS}
+\newcommand{\ecef}{ECEF}
+\newcommand{\mcd}{MCD}
+\newcommand{\sdre}{SDRE}
+\newcommand{\lqr}{LQR}
+\newcommand{\lqt}{LQT}
+\newcommand{\pid}{PID}
+\newcommand{\pd}{PD}
+\newcommand{\vant}{VANT}
+\newcommand{\fk}{KF}
+\newcommand{\ekf}{EKF}
+\newcommand{\mekf}{MEKF}
+\newcommand{\erkf}{ErKF}
+\newcommand{\imu}{IMU}
+\newcommand{\vhsor}{HSO}
+\newcommand{\ahrs}{AHRS}
+\newcommand{\marg}{MARG}
+\newcommand{\zoh}{ZOH}
+\newcommand{\ned}{NED}
+\newcommand{\gnss}{GNSS}
+\newcommand{\mimo}{MIMO}
+\newcommand{\siso}{SISO}
+\newcommand{\ins}{INS}
+\newcommand{\mmq}{MMQ}
+\newcommand{\triadAlgoritimo}{TRIAD}
+\newcommand{\quest}{QUEST}
+\newcommand{\foam}{FOAM}
+\newcommand{\svd}{SVD}
+\newcommand{\rmse}{RMSE}
+\newcommand{\flae}{FLAE}
+\newcommand{\fqa}{FQA}
+\newcommand{\saam}{SAAM}
+\newcommand{\nasa}{NASA}
+\newcommand{\cf}{CF}
+\newcommand{\dlpf}{DLPF}
+\newcommand{\cad}{CAD}
+\newcommand{\mems}{MEMS}
+\newcommand{\ros}{ROS}
+\newcommand{\ikf}{IKF}
+\newcommand{\wb}{WB}
+\newcommand{\pcnt}{PCNT}
+\newcommand{\api}{API}
+\newcommand{\dcta}{DCTA}
+\newcommand{\ieav}{IEAv}
+\newcommand{\iae}{IAE}
+\newcommand{\efo}{EFO}
+\newcommand{\ifo}{IFO}
+\newcommand{\cti}{CT\&I}
+\newcommand{\comaer}{COMAER}
+\newcommand{\efos}{EFO-S}
+\newcommand{\aom}{AOM}
+\newcommand{\finep}{FINEP}
+\newcommand{\wdm}{WDM}
+\newcommand{\fbg}{FBG}
+\newcommand{\mzi}{MZI}
+\newcommand{\laser}{\emph{LASER}}
+\newcommand{\osa}{OSA}
+\newcommand{\fo}{FO}
+\newcommand{\fab}{FAB}
+\newcommand{\pgcte}{PG/CTE}
+\newcommand{\ctes}{CTE-S}
+\newcommand{\gdl}{GDL}

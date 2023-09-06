@@ -1,0 +1,918 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extarticle
+\use_default_options true
+\maintain_unincluded_children true
+\language brazilian
+\language_package babel
+\inputencoding utf8
+\fontencoding T1
+\font_roman "md-utopia" "DejaVu Serif Condensed"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing other 1.5
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine biblatex
+\cite_engine_type authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\branch filho
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\columnsep 0.1cm
+\secnumdepth 4
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 1.5cm
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\transpose}{\glssymbol{transpose}}
+{\ensuremath{\intercal}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\energiaCinetica}{\glssymbol{energiaCinetica}}
+{\ensuremath{\mathfrak{T}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\funcaoRayleigh}{\glssymbol{funcaoRayleigh}}
+{\ensuremath{\mathfrak{F}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\energiaPotencial}{\glssymbol{energiaPotencial}}
+{\ensuremath{\mathfrak{P}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\tracoMatriz}{\glssymbol{tracoMatriz}}
+{\ensuremath{\text{Tr}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sistemaInercial}{\glssymbol{sistemaInercial}}
+{\ensuremath{\mathcal{I}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sistemaMassaSismica}{\glssymbol{sistemaMassaSismica}}
+{\ensuremath{\mathcal{M}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sistemaBaseSensor}{\glssymbol{sistemaBaseSensor}}
+{\ensuremath{\mathcal{B}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sistemaECEF}{\glssymbol{sistemaECEF}}
+{\ensuremath{\mathcal{E}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\matIdentidade}{\glssymbol{matIdentidade}}
+{\ensuremath{\mathbb{I}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\funcaoH}{\glssymbol{funcaoH}}
+{\ensuremath{\mathfrak{H}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\funcaoL}{\glssymbol{funcaoL}}
+{\ensuremath{\mathfrak{L}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\tempo}{\glssymbol{tempo}}
+{\ensuremath{t}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\vetorPosicao}{\glssymbol{vetorPosicao}}
+{\ensuremath{\mathbf{r}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\posicaoSensor}{\glssymbol{posicaoSensor}}
+{\ensuremath{{}^{\glsentrysymbol{SistemaMassaSismica}}\mathbf{r}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\posicaoNavegacao}{\glssymbol{posicaoNavegacao}}
+{\ensuremath{{}^{\glsentrysymbol{sistemaInercial}}\mathbf{r}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\posicaoECEF}{\glssymbol{posicaoECEF}}
+{\ensuremath{{}^{\glsentrysymbol{sistemaECEF}}\mathbf{r}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\velocidadeSensor}{\glssymbol{velocidadeSensor}}
+{\ensuremath{{}^{\glsentrysymbol{SistemaMassaSismica}}\dot{\mathbf{r}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\velocidadeNavegacao}{\glssymbol{velocidadeNavegacao}}
+{\ensuremath{{}^{\glsentrysymbol{sistemaInercial}}\dot{\mathbf{r}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\aceleracaoSensor}{\glssymbol{aceleracaoSensor}}
+{\ensuremath{{}^{\glsentrysymbol{SistemaMassaSismica}}\ddot{\mathbf{r}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\aceleracaoNavegacao}{\glssymbol{aceleracaoNavegacao}}
+{\ensuremath{{}^{\glsentrysymbol{sistemaInercial}}\ddot{\mathbf{r}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mapRotacaoAngular}{\glssymbol{mapRotacaoAngular}}
+{\ensuremath{\mathcal{W}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\vetEuler}{\glssymbol{vetEuler}}
+{\ensuremath{\boldsymbol{\varTheta}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\vetDerivadaEuler}{\glssymbol{vetDerivadaEuler}}
+{\ensuremath{\dot{\boldsymbol{\varTheta}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\phiEuler}{\glssymbol{phiEuler}}
+{\ensuremath{\phi}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\thetaEuler}{\glssymbol{thetaEuler}}
+{\ensuremath{\theta}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\psiEuler}{\glssymbol{psiEuler}}
+{\ensuremath{\psi}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\phiDerivadaEuler}{\glssymbol{phiDerivadaEuler}}
+{\ensuremath{\dot\phi}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\thetaDerivadaEuler}{\glssymbol{thetaDerivadaEuler}}
+{\ensuremath{\dot\theta}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\psiDerivadaEuler}{\glssymbol{psiDerivadaEuler}}
+{\ensuremath{\dot\psi}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\X}{\glssymbol{X}}
+{\ensuremath{X}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Y}{\glssymbol{Y}}
+{\ensuremath{Y}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Z}{\glssymbol{Z}}
+{\ensuremath{Z}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\q}{\glssymbol{q}}
+{\ensuremath{\mathbf{q}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\qv}{\glssymbol{qv}}
+{\ensuremath{\mathbf{q}_v}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\qi}{\glssymbol{qi}}
+{\ensuremath{q}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\omegai}{\glssymbol{omegai}}
+{\ensuremath{\omega}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\vetOmega}{\glssymbol{vetOmega}}
+{\ensuremath{\boldsymbol{\omega}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\prodQuat}{\glssymbol{prodQuat}}
+{\ensuremath{\otimes}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\potHadamard}{\glssymbol{potHadamard}}
+{\ensuremath{{\circ}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\esperanca}{\glssymbol{esperanca}}
+{\ensuremath{\mathbb{E}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\conjuntoReais}{\glssymbol{conjuntoReais}}
+{\ensuremath{\mathbb{R}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\conjuntoComplexos}{\glssymbol{conjuntoComplexos}}
+{\ensuremath{\mathbb{C}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\conjuntoReaisPositivos}{\glssymbol{conjuntoReaisPositivos}}
+{\ensuremath{\mathbb{R}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\matRot}{\glssymbol{matRot}}
+{\ensuremath{\boldsymbol{\mathcal{R}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\timesOperator}{\glssymbol{timesOperator}}
+{\ensuremath{\times}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\perturbacao}{\glssymbol{perturbacao}}
+{\ensuremath{\delta}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\leftQuaternion}{\glssymbol{leftQuaternion}}
+{\ensuremath{\boldsymbol{\mathcal{S}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\rightQuaternion}{\glssymbol{rightQuaternion}}
+{\ensuremath{\boldsymbol{\mathcal{S}}_{r}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\leftQuaternionQ}{\glssymbol{leftQuaternionQ}}
+{\ensuremath{\boldsymbol{\mathcal{Q}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\rightQuaternionQ}{\glssymbol{rightQuaternionQ}}
+{\ensuremath{\boldsymbol{\mathcal{Q}}_{r}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\gravidade}{\glssymbol{gravidade}}
+{\ensuremath{\mathrm{g}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\basex}{\glssymbol{basex}}
+{\ensuremath{\hat{\boldsymbol{x}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\basey}{\glssymbol{basey}}
+{\ensuremath{\hat{\boldsymbol{y}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\basez}{\glssymbol{basez}}
+{\ensuremath{\hat{\boldsymbol{z}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\longitude}{\glssymbol{longitude}}
+{\ensuremath{\varphi}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\latitude}{\glssymbol{latitude}}
+{\ensuremath{\lambda}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\altitude}{\glssymbol{altitude}}
+{\ensuremath{h}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\forcasTranslacionais}{\glssymbol{forcasTranslacionais}}
+{\ensuremath{\mathbf{F}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\vecTorques}{\glssymbol{vecTorques}}
+{\ensuremath{\boldsymbol{\tau}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\deformation}{\glssymbol{deformation}}
+{\ensuremath{\varepsilon}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\temperature}{\glssymbol{temperature}}
+{\ensuremath{T}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\complexi}{\glssymbol{complexi}}
+{\ensuremath{\imath}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Ixm}{\glssymbol{Ixm}}
+{\ensuremath{I_{x}^{\glsentrysymbol{SistemaMassaSismica}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Iym}{\glssymbol{Iym}}
+{\ensuremath{I_{y}^{\glsentrysymbol{SistemaMassaSismica}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Izm}{\glssymbol{Izm}}
+{\ensuremath{I_{z}^{\glsentrysymbol{SistemaMassaSismica}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Ixs}{\glssymbol{Ixs}}
+{\ensuremath{I_{x}^{\glsentrysymbol{SistemaSensor}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Iys}{\glssymbol{Iys}}
+{\ensuremath{I_{y}^{\glsentrysymbol{SistemaSensor}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Izs}{\glssymbol{Izs}}
+{\ensuremath{I_{z}^{\glsentrysymbol{SistemaSensor}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\comprimentoInicialFibra}{\glssymbol{comprimentoInicialFibra}}
+{\ensuremath{\bar{\ell}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\massaSismica}{\glssymbol{massaSismica}}
+{\ensuremath{m_{\mathcal{M}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\massaBaseSensor}{\glssymbol{massaBaseSensor}}
+{\ensuremath{m_{\mathcal{B}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\matrizInerciaSensor}{\glssymbol{matrizInerciaSensor}}
+{\ensuremath{\mathbf{I}_{\mathcal{B}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\matrizInerciaMassa}{\glssymbol{matrizInerciaMassa}}
+{\ensuremath{\mathbf{I}_{\mathcal{M}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\conexaoBase}{\glssymbol{conexaoBase}}
+{\ensuremath{\mathbf{b}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\conexaoMassaSismica}{\glssymbol{conexaoMassaSismica}}
+{\ensuremath{\mathbf{m}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\moduloYoung}{\glssymbol{moduloYoung}}
+{\ensuremath{Y_{\mathrm{Si}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\wavelenghtFBG}{\glssymbol{wavelenghtFBG}}
+{\ensuremath{\lambda_\text{g}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\wavelenghtLaser}{\glssymbol{wavelenghtLaser}}
+{\ensuremath{\lambda_\text{L}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\electricField}{\glssymbol{electricField}}
+{\ensuremath{E}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\electricFieldVector}{\glssymbol{electricFieldVector}}
+{\ensuremath{\mathbf{e}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\magneticField}{\glssymbol{magneticField}}
+{\ensuremath{H}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\magneticFieldVector}{\glssymbol{magneticFieldVector}}
+{\ensuremath{\mathbf{h}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\propagationVector}{\glssymbol{propagationVector}}
+{\ensuremath{\boldsymbol{\kappa}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\refractionIndex}{\glssymbol{refractionIndex}}
+{\ensuremath{\mathrm{n}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\waveNumber}{\glssymbol{waveNumber}}
+{\ensuremath{\kappa}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\lightVelocity}{\glssymbol{lightVelocity}}
+{\ensuremath{\mathrm{c}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\braggModulationPeriod}{\glssymbol{braggModulationPeriod}}
+{\ensuremath{\Lambda}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\magneticPermeability}{\glssymbol{magneticPermeability}}
+{\ensuremath{\mu}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\reflectivity}{\glssymbol{reflectivity}}
+{\ensuremath{r}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\transmittivity}{\glssymbol{transmittivity}}
+{\ensuremath{t}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\eletricDisplacementVector}{\glssymbol{eletricDisplacementVector}}
+{\ensuremath{\mathbf{d}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\magneticFluxVector}{\glssymbol{magneticFluxVector}}
+{\ensuremath{\mathbf{b}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\dieletricConstant}{\glssymbol{dieletricConstant}}
+{\ensuremath{\varepsilon}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\photodetector}{\glssymbol{photodetector}}
+{\ensuremath{p^\text{pd}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\transimpedanceTension}{\glssymbol{transimpedanceTension}}
+{\ensuremath{v^\text{tr}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\transimpedanceGain}{\glssymbol{transimpedanceGain}}
+{\ensuremath{k^\text{tr}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\photodetectorCurrent}{\glssymbol{photodetectorCurrent}}
+{\ensuremath{i^\text{pd}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\photodetectorResponsivity}{\glssymbol{photodetectorResponsivity}}
+{\ensuremath{k^\text{pd}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sourceCurrent}{\glssymbol{sourceCurrent}}
+{\ensuremath{i^\text{s}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\osaReading}{\glssymbol{osaReading}}
+{\ensuremath{p^{\glsentryname{osa}}}}
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\opticalSource}{\glssymbol{opticalSource}}
+{\ensuremath{s}}
+\end_inset
+
+\end_layout
+
+\end_body
+\end_document

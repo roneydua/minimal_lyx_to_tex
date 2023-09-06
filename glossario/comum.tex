@@ -1,0 +1,595 @@
+\newglossaryentry{comum}
+{type=symbols,
+  name= {Simbolos Gerais},
+  description={}
+}
+
+\newglossaryentry{operadores}
+{type=symbols,
+  name= {Operadores matemáticos},
+  description={}
+}
+
+
+
+\newglossaryentry{transpose}
+{type=symbols,
+  name= \ensuremath{\left\llbracket \bullet \right\rrbracket ^{\intercal}},
+  parent = {operadores},
+  unit = \unexpanded{},
+  symbol = \ensuremath{\intercal},
+  description={Operador de transposição de matriz}
+}
+
+\newglossaryentry{energiaCinetica}
+{type=symbols,
+  name= \ensuremath{\mathfrak{T}},
+  parent = {comum},
+  symbol = \ensuremath{\mathfrak{T}},
+  unit = \unexpanded{\si{\joule}},
+  description={Energia cinética}
+}
+
+\newglossaryentry{funcaoRayleigh}
+{type=symbols,
+  name= \ensuremath{\mathfrak{F}},
+  parent = {comum},
+  symbol = \ensuremath{\mathfrak{F}},
+  unit = \unexpanded{\si{\joule}},
+  description={Função de dissipação de Rayleigh}
+}
+
+\newglossaryentry{energiaPotencial}
+{type=symbols,
+  name= \ensuremath{\mathfrak{P}},
+  parent = {comum},
+  unit=\unexpanded{\si{\joule}},
+  symbol = \ensuremath{\mathfrak{P}},
+  description={Energia potencial}
+}
+
+\newglossaryentry{tracoMatriz}
+{type=symbols,
+  name= \ensuremath{\text{Tr}\;\mathbf{A}},
+  parent = {operadores},
+  unit = \unexpanded{},
+  symbol = \ensuremath{\text{Tr}},
+  description={Traço da matriz \ensuremath{\mathbf{A}}}
+}
+
+\newglossaryentry{sistemaInercial}
+{type=symbols,
+  name=\ensuremath{\mathcal{I}},
+  unit={},
+  symbol = \ensuremath{\mathcal{I}},
+  parent = comum,
+  description={Sistema de inercial}
+}
+
+\newglossaryentry{sistemaMassaSismica}
+{type=symbols,
+  name=\ensuremath{\mathcal{M}},
+  parent = comum,
+  unit={},
+  symbol = \ensuremath{\mathcal{M}},
+  description={Sistema da massa sísmica}
+}
+
+\newglossaryentry{sistemaBaseSensor}
+{type=symbols,
+  name=\ensuremath{\mathcal{B}},
+  parent = comum,
+  unit={},
+  symbol = \ensuremath{\mathcal{B}},
+  description={Sistema da base do sensor}
+}
+
+\newglossaryentry{sistemaECEF}
+{type=symbols,
+  name= \ensuremath{\mathcal{E}},
+  parent = {comum},
+  unit={},
+  symbol = \ensuremath{\mathcal{E}},
+  description={Sistema \glsentryname{ecef}}
+}
+
+
+\newglossaryentry{matIdentidade}
+{type=symbols,
+  name= \ensuremath{\mathbb{I}_{n}},
+  parent = comum,
+  unit={},
+  symbol = \ensuremath{\mathbb{I}},
+  description={Matriz identidade de dimensão \ensuremath{n}}
+}
+
+\newglossaryentry{funcaoH}
+{type=symbols,
+  name= \ensuremath{\mathfrak{H}},
+  unit={},
+  symbol = \ensuremath{\mathfrak{H}},
+  parent = comum,
+  description={Função de Hamilton}
+}
+
+\newglossaryentry{funcaoL}
+{type=symbols,
+  name= \ensuremath{\mathfrak{L}},
+  parent = {comum},
+  unit = {\unexpanded{\si{\joule}}},
+  symbol = \ensuremath{\mathfrak{L}},
+  description={Função de Lagrange}
+}
+
+\newglossaryentry{tempo}
+{type=symbols,
+  name= \ensuremath{t},
+  unit=\unexpanded{\si{\second}},
+  symbol = \ensuremath{t},
+  parent = comum,
+  description={Tempo}
+}
+
+\newglossaryentry{vetorPosicao}
+{type=symbols,
+  name= \ensuremath{{}^{\mathcal{A}}\mathbf{r}},
+  parent = {comum},
+  unit = \unexpanded{\si{\meter}},
+  symbol = \ensuremath{\mathbf{r}},
+  description={Vetor posição no sistema \ensuremath{\mathcal{A}}}
+}
+
+\newglossaryentry{posicaoSensor}
+{type=symbols,
+  name= \ensuremath{{}^{\glsentrysymbol{SistemaMassaSismica}}\mathbf{r}},
+  parent = {comum},
+  unit=\unexpanded{\si{\meter}},
+  symbol = \ensuremath{{}^{\glsentrysymbol{SistemaMassaSismica}}\mathbf{r}},
+  description={Vetor de posição expresso no referencial do corpo}
+}
+
+\newglossaryentry{posicaoNavegacao}
+{type=symbols,
+  name= \ensuremath{{}^{\glsentrysymbol{sistemaInercial}}\mathbf{r}},
+  parent = {comum},
+  unit=\unexpanded{\metre},
+  symbol = \ensuremath{{}^{\glsentrysymbol{sistemaInercial}}\mathbf{r}},
+  description={Vetor de posição expresso no referencial inercial}
+}
+
+\newglossaryentry{posicaoECEF}
+{type=symbols,
+  name= \ensuremath{{}^{\glsentrysymbol{sistemaECEF}}\mathbf{r}},
+  parent = {comum},
+  unit = \unexpanded{},
+  symbol = \ensuremath{{}^{\glsentrysymbol{sistemaECEF}}\mathbf{r}},
+  description={Vetor de posição expresso no referencial \glsentryname{ecef}}
+}
+
+\newglossaryentry{velocidadeSensor}
+{type=symbols,
+  name= \ensuremath{{}^{\glsentrysymbol{SistemaMassaSismica}}\dot{\mathbf{r}}},
+  parent = {comum},
+  unit=\unexpanded{\metre\per\second},
+  symbol = \ensuremath{{}^{\glsentrysymbol{SistemaMassaSismica}}\dot{\mathbf{r}}},
+  description={Vetor de velocidade expresso no referencial do corpo}
+}
+
+\newglossaryentry{velocidadeNavegacao}
+{type=symbols,
+  name= \ensuremath{{}^{\glsentrysymbol{sistemaInercial}}\dot{\mathbf{r}}},
+  parent = {comum},
+  unit=\unexpanded{\metre\per\second},
+  symbol = \ensuremath{{}^{\glsentrysymbol{sistemaInercial}}\dot{\mathbf{r}}},
+  description={Vetor de velocidade expresso no referencial inercial}
+}
+
+\newglossaryentry{aceleracaoSensor}
+{type=symbols,
+  name= \ensuremath{{}^{\glsentrysymbol{SistemaMassaSismica}}\ddot{\mathbf{r}}},
+  parent = {comum},
+  unit=\unexpanded{\metre\per\second\squared},
+  symbol = \ensuremath{{}^{\glsentrysymbol{SistemaMassaSismica}}\ddot{\mathbf{r}}},
+  description={Vetor de aceleração expresso no referencial do corpo}
+}
+
+\newglossaryentry{aceleracaoNavegacao}
+{type=symbols,
+  name= \ensuremath{{}^{\glsentrysymbol{sistemaInercial}}\ddot{\mathbf{r}}},
+  parent = {comum},
+  unit=\unexpanded{\si{\metre\per\second\squared}},
+  symbol = \ensuremath{{}^{\glsentrysymbol{sistemaInercial}}\ddot{\mathbf{r}}},
+  description={Vetor de aceleração expresso no referencial inercial}
+}
+
+\newglossaryentry{mapRotacaoAngular}
+{type=symbols,
+  name= \ensuremath{\mathcal{W}\left(\glsentrysymbol{vetEuler}\right)},
+  parent = {operadores},
+  unit = \unexpanded{},
+  symbol = \ensuremath{\mathcal{W}},
+  description={Mapa dos ângulos de Tait-Bryan para \ensuremath{{}^{\glsentrysymbol{SistemaMassaSismica}}\glsentrysymbol{vetOmega}}, \glsentrysymbol{vetEuler}\ensuremath{\rightarrow} \glsentrysymbol{vetDerivadaEuler}}
+}
+
+\newglossaryentry{vetEuler}
+{type=symbols,
+  name= \ensuremath{\boldsymbol{\varTheta}},
+  parent = {comum},
+  unit=\unexpanded{\si{\radian}},
+  symbol = \ensuremath{\boldsymbol{\varTheta}},
+  description={Vetor dos angulos de Euler \ensuremath{\left[\begin{array}{ccc}
+            \phi & \theta & \psi\end{array}\right]^{\intercal}}}
+}
+
+\newglossaryentry{vetDerivadaEuler}
+{type=symbols,
+  name= \ensuremath{\dot{\boldsymbol{\varTheta}}},
+  parent = {comum},
+  unit=\unexpanded{\si{\radian\per\second}},
+  symbol = \ensuremath{\dot{\boldsymbol{\varTheta}}},
+  description={Vetor da derivada dos angulos de Euler \ensuremath{\left[\begin{array}{ccc}
+            \dot{\phi} & \dot{\theta} & \dot{\psi}\end{array}\right]^{\intercal}}}
+}
+
+\newglossaryentry{phiEuler}
+{type=symbols,
+  name= \ensuremath{\phi},
+  parent = {comum},
+  unit=\unexpanded{\si{\radian}},
+  symbol = \ensuremath{\phi},
+  description={Ângulo de rolagem \emph{roll}}
+}
+
+\newglossaryentry{thetaEuler}
+{type=symbols,
+  name= \ensuremath{\theta},
+  parent = {comum},
+  unit=\unexpanded{\si{\radian}},
+  symbol = \ensuremath{\theta},
+  description={Ângulo de arfagem \emph{pitch}}
+}
+
+\newglossaryentry{psiEuler}
+{type=symbols,
+  name= \ensuremath{\psi},
+  parent = {comum},
+  unit=\unexpanded{\si{\radian}},
+  symbol = \ensuremath{\psi},
+  description={Ângulo de guinada \emph{yaw}}
+}
+
+\newglossaryentry{phiDerivadaEuler}
+{type=symbols,
+  name= \ensuremath{\dot\phi},
+  parent = {comum},
+  unit=\unexpanded{\si{\radian\per\second}},
+  symbol = \ensuremath{\dot\phi},
+  description={Taxa de variação do ângulo de rolagem (\emph{roll})}
+}
+
+\newglossaryentry{thetaDerivadaEuler}
+{type=symbols,
+  name= \ensuremath{\dot\theta},
+  parent = {comum},
+  unit=\unexpanded{\si{\radian\per\second}},
+  symbol = \ensuremath{\dot\theta},
+  description={Taxa de variação do ângulo de arfagem (\emph{pitch})}
+}
+
+\newglossaryentry{psiDerivadaEuler}
+{type=symbols,
+  name= \ensuremath{\dot\psi},
+  parent = {comum},
+  unit=\unexpanded{\si{\radian\per\second}},
+  symbol = \ensuremath{\dot\psi},
+  description={Taxa de variação do ângulo de guinada (\emph{yaw})}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Estados de translacao
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newglossaryentry{X}
+{type=symbols,
+  name= \ensuremath{X},
+  parent = {comum},
+  unit=\unexpanded{\si{\meter}},
+  symbol = \ensuremath{X},
+  description={Posição na direção \ensuremath{X} do sistema inercial}
+}
+
+\newglossaryentry{Y}
+{type=symbols,
+  name= \ensuremath{Y},
+  parent = {comum},
+  unit=\unexpanded{\si{\meter}},
+  symbol = \ensuremath{Y},
+  description={Posição na direção \ensuremath{Y} do sistema inercial}
+}
+
+\newglossaryentry{Z}
+{type=symbols,
+  name= \ensuremath{Z},
+  parent = {comum},
+  unit=\unexpanded{\si{\meter}},
+  symbol = \ensuremath{Z},
+  description={Posição na direção \ensuremath{Z} do sistema inercial}
+}
+
+\newglossaryentry{q}
+{type=symbols,
+  name= \ensuremath{\,{}_{\mathcal{A}}^{\mathcal{B}}\mathbf{q}},
+  parent = {comum},
+  unit = {},
+  symbol = \ensuremath{\mathbf{q}},
+  description={Quatérnion de atitude que transforma um vetor escrito no sistema \ensuremath{\mathcal{A}} para o \ensuremath{\mathcal{B}}}
+}
+
+\newglossaryentry{qv}
+{type=symbols,
+  name= \ensuremath{\glsentrysymbol{q}_v},
+  parent = {comum},
+  unit = {},
+  symbol = \ensuremath{\mathbf{q}_v},
+  description={Parte vetorial do quatérnion \glsentrysymbol{q}}
+}
+
+\newglossaryentry{qi}
+{type=symbols,
+  name= \ensuremath{q_i},
+  parent = {comum},
+  unit = {},
+  symbol = \ensuremath{q},
+  description={Componente \ensuremath{i} do quatérnion \glsentrysymbol{q}}
+}
+
+\newglossaryentry{omegai}
+{type=symbols,
+  name= \ensuremath{\omega_i},
+  parent = {comum},
+  unit = \unexpanded{{\si{\radian\per\second}}},
+  symbol = \ensuremath{\omega},
+  description={Rotação angular no eixo \ensuremath{i} do corpo}
+}
+
+\newglossaryentry{vetOmega}
+{type=symbols,
+  name= \ensuremath{{}^{\mathcal{A}}\boldsymbol{\omega}},
+  parent = {comum},
+  unit = \unexpanded{{\si{\radian\per\second}}},
+  symbol = \ensuremath{\boldsymbol{\omega}},
+  description={Vetor das componentes angulares no sistema \ensuremath{\mathcal{A}}}
+}
+
+\newglossaryentry{prodQuat}
+{type=symbols,
+  name= \ensuremath{\otimes},
+  parent = {operadores},
+  unit = {},
+  symbol = \ensuremath{\otimes},
+  description={Produto de quatérnions}
+}
+
+\newglossaryentry{potHadamard}
+{type=symbols,
+  name= \ensuremath{{\bullet}^{\circ n}},
+  parent = {operadores},
+  unit = {},
+  symbol = \ensuremath{{\circ}},
+  description={Potência de Hadamard de ordem n}
+}
+
+\newglossaryentry{esperanca}
+{type=symbols,
+  name= \ensuremath{\mathbb{E}\left\{\bullet \right\}},
+  parent = {operadores},
+  unit = {},
+  symbol = \ensuremath{\mathbb{E}},
+  description={Operador esperança}
+}
+
+\newglossaryentry{conjuntoReais}
+{type=symbols,
+  name= \ensuremath{\mathbb{R}},
+  parent = {operadores},
+  unit = {},
+  symbol = \ensuremath{\mathbb{R}},
+  description={Conjunto dos números reais}
+}
+
+
+\newglossaryentry{conjuntoComplexos}
+{type=symbols,
+  name= \ensuremath{\mathbb{C}},
+  parent = {operadores},
+  unit = {},
+  symbol = \ensuremath{\mathbb{C}},
+  description={Conjunto dos números complexos}
+}
+
+
+\newglossaryentry{conjuntoReaisPositivos}
+{type=symbols,
+  symbol = \ensuremath{\mathbb{R}},
+  name= \ensuremath{\glsentrysymbol{conjuntoReais}^{*}_{+}},
+  parent = {operadores},
+  unit = {},
+  description={Conjunto dos números reais positivos não nulos}
+}
+
+\newglossaryentry{matRot}
+{type=symbols,
+  name= \ensuremath{{}^{\mathcal{A}}_{\mathcal{B}}\boldsymbol{\mathcal{R}}},
+  parent = {comum},
+  unit = {},
+  symbol = \ensuremath{\boldsymbol{\mathcal{R}}},
+  description={Matriz de transformação de coordenadas do sistema  \ensuremath{\mathcal{A}} para o \ensuremath{\mathcal{B}}}
+}
+
+
+\newglossaryentry{timesOperator}
+{type=symbols,
+  name= \ensuremath{\times},
+  parent = {operadores},
+  unit = {},
+  symbol = \ensuremath{\times},
+  description={Operador de produto vetorial}
+}
+
+\newglossaryentry{perturbacao}
+{type=symbols,
+  name= \ensuremath{\delta\left\{\bullet\right\}},
+  parent = {operadores},
+  unit = {},
+  symbol = \ensuremath{\delta},
+  description={Perturbação de uma variável \ensuremath{\bullet}}
+}
+
+
+\newglossaryentry{leftQuaternion}
+{type=symbols,
+  name= \ensuremath{\boldsymbol{\mathcal{S}}},
+  parent = {operadores},
+  unit = \unexpanded{},
+  symbol = \ensuremath{\boldsymbol{\mathcal{S}}},
+  description={Operador produtos de quatérnios \emph{left-quaternion}}
+}
+
+\newglossaryentry{rightQuaternion}
+{type=symbols,
+  name= \ensuremath{\boldsymbol{\mathcal{S}}_{r}},
+  parent = {operadores},
+  unit = \unexpanded{},
+  symbol = \ensuremath{\boldsymbol{\mathcal{S}}_{r}},
+  description={Operador produtos de quatérnios \emph{right-quaternion}}
+}
+
+\newglossaryentry{leftQuaternionQ}
+{type=symbols,
+  name= \ensuremath{\boldsymbol{\mathcal{Q}}},
+  parent = {operadores},
+  unit = \unexpanded{},
+  symbol = \ensuremath{\boldsymbol{\mathcal{Q}}},
+  description={Operador produto quatérnio por vetor}
+}
+
+\newglossaryentry{rightQuaternionQ}
+{type=symbols,
+  name= \ensuremath{\boldsymbol{\mathcal{Q}}_{r}},
+  parent = {operadores},
+  unit = \unexpanded{},
+  symbol = \ensuremath{\boldsymbol{\mathcal{Q}}_{r}},
+  description={Operador produto quatérnio por vetor}
+}
+
+\newglossaryentry{gravidade}
+{type=symbols,
+  name= \ensuremath{\mathrm{g}},
+  parent = {comum},
+  unit = \unexpanded{\si{\meter\per\second\squared}},
+  symbol = \ensuremath{\mathrm{g}},
+  description={Valor absoluto da aceleração da gravidade}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% bases
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newglossaryentry{basex}
+{type=symbols,
+  name= \ensuremath{{}^{\scriptscriptstyle{\mathcal{A}}}\hat{\boldsymbol{x}}},
+  parent = {operadores},
+  unit = \unexpanded{},
+  symbol = \ensuremath{\hat{\boldsymbol{x}}},
+  description={Versor unitário na direção \ensuremath{x} sistema \ensuremath{\mathcal{A}}}
+}
+
+\newglossaryentry{basey}
+{type=symbols,
+  name= \ensuremath{{}^{\scriptscriptstyle{\mathcal{A}}}\hat{\boldsymbol{y}}},
+  parent = {operadores},
+  unit = \unexpanded{},
+  symbol = \ensuremath{\hat{\boldsymbol{y}}},
+  description={Versor unitário na direção \ensuremath{y} sistema  \ensuremath{\mathcal{A}}}
+}
+
+\newglossaryentry{basez}
+{type=symbols,
+  name= \ensuremath{{}^{\scriptscriptstyle{\mathcal{A}}}\hat{\boldsymbol{z}}},
+  parent = {operadores},
+  unit = \unexpanded{},
+  symbol = \ensuremath{\hat{\boldsymbol{z}}},
+  description={Versor unitário na direção \ensuremath{z} sistema \ensuremath{\mathcal{A}}}
+}
+
+\newglossaryentry{longitude}
+{type=symbols,
+  name= \ensuremath{\varphi},
+  parent = {comum},
+  unit = \unexpanded{\degree},
+  symbol = \ensuremath{\varphi},
+  description={coordenada de longitude do sistema \glsentryname{ecef}}
+}
+
+\newglossaryentry{latitude}
+{type=symbols,
+  name= \ensuremath{\lambda},
+  parent = {comum},
+  unit = \unexpanded{\degree},
+  symbol = \ensuremath{\lambda},
+  description={coordenada de latitude do sistema \glsentryname{ecef}}
+}
+
+\newglossaryentry{altitude}
+{type=symbols,
+  name= \ensuremath{h},
+  parent = {comum},
+  unit = \unexpanded{\si{\meter}},
+  symbol = \ensuremath{h},
+  description={coordenada de altitude do sistema \glsentryname{ecef}}
+}
+
+\newglossaryentry{forcasTranslacionais}
+{type=symbols,
+  name= \ensuremath{\mathbf{F}},
+  parent = {comum},
+  unit = \unexpanded{\si{\newton}},
+  symbol = \ensuremath{\mathbf{F}},
+  description={Vetor de forças no corpo do sensor}
+}
+
+\newglossaryentry{vecTorques}
+{type=symbols,
+  name= \ensuremath{\boldsymbol{\tau}},
+  parent = {comum},
+  unit=\unexpanded{\si{\newton\meter}},
+  symbol = \ensuremath{\boldsymbol{\tau}},
+  description={Vetor de torques}
+}
+
+\newglossaryentry{deformation}
+{type=symbols,
+  name= \ensuremath{\varepsilon},
+  parent = {comum},
+  unit=\unexpanded{},
+  symbol = \ensuremath{\varepsilon},
+  description={Deformação mecânica}
+}
+
+\newglossaryentry{temperature}
+{type=symbols,
+  name= \ensuremath{T},
+  parent = {comum},
+  unit=\unexpanded{\unit{\celsius}},
+  symbol = \ensuremath{T},
+  description={Temperatura}
+}
+
+
+
+
+\newglossaryentry{complexi}
+{type=symbols,
+  name= \ensuremath{\imath},
+  parent = {comum},
+  unit = \unexpanded{},
+  symbol = \ensuremath{\imath},
+  description={Raiz imaginária ($\glsentryname{complexi} = \sqrt{-1}$)}
+}

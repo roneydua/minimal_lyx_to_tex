@@ -1,0 +1,52 @@
+% \usepackage[acronym,symbols,toc, automake=true,translate=babel,nomain, nonumberlistz]{glossaries-extra}
+
+\usepackage[acronym,%
+  symbols,%
+  toc=false,
+  automake=true,
+  translate=babel,
+  nonumberlist,
+  % hyperoutside=true,
+  % numberedsection=autolabel,
+  % sanitize={none},
+  nomain]{glossaries}
+\usepackage{glossary-mcols}
+\makeglossaries
+
+
+% adiciona o campo de unidades
+%\usepackage{glossary-mcols}%multi-column styles
+
+\newglossarystyle{supergroup}{%
+  % \setglossarystyle{super3col}%
+\setglossarystyle{long3colheader}%
+  \renewcommand*{\glossaryheader}{%
+    \bfseries Símbolo  & \bfseries Descrição & \bfseries Unidades \\\hline}%
+\setlength{\glsdescwidth}{0.7\textwidth}%
+  \renewcommand*{\glsgroupskip}{}%
+  \renewcommand{\glossentry}[2]{%
+    \tabularnewline
+    \multicolumn{2}{c}{%
+     \bfseries\glsentryitem{##1}\glstarget{##1}{\glossentryname{##1}}%
+    }%
+    \tabularnewline
+    & \glossentrydesc{##1}%\glspostdescription
+    \tabularnewline
+  }%
+  \renewcommand{\subglossentry}[3]{%
+     \glssubentryitem{##2}%
+     \glstarget{##2}{\glossentryname{##2}}
+     &
+     \glossentrydesc{##2}\glspostdescription
+     &
+    \glsentryunit{##2}%{##3}%\space\space
+    \tabularnewline
+  }%
+}
+\glsaddkey{unit}{\glsentrytext{\glslabel}}{\glsentryunit}{\GLsentryunit}{\glsunit}{\Glsunit}{\GLSunit}
+
+%\newglossary{estimador}{est}{estl}{Símbolos do estimador}
+\loadglsentries[\acronymtype]{glossario/siglas}
+%  \loadglsentries[symbols,estimador]{simbolos}
+\loadglsentries[symbols]{./glossario/simbolos}
+% \loadglsentries[symbols]{glossario/parametros, glossario/controle, glossario/estimador, glossario/comum}

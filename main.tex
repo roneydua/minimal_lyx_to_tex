@@ -1,0 +1,52 @@
+\RequirePackage{fix-cm}
+\RequirePackage{fixltx2e}
+\documentclass[10pt,brazil]{extarticle}
+
+\RequirePackage{preamble}
+
+
+\makeatletter
+
+\makeatletter
+\AtBeginDocument{
+    \ifpdf\else
+        \@ifpackageloaded{preview}{
+            \ifPreview
+                \RemoveFromHook{shipout/firstpage}[hyperref]
+                \RemoveFromHook{shipout/before}[hyperref]
+                % \RemoveFromHook{shipout/before}[beamerbasenavigation]
+            \fi
+        }{}
+    \fi
+}
+
+
+% LTeX: SETTINGS
+\input{glossario/mathSymbols.tex}
+\input{glossario/operators.tex}
+
+
+\makeatother
+\addbibresource{bibliografia.bib}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+% \printglossary[type=symbols, style=supergroup]%, nonumberlist]   % list of symbols
+% \printglossary[type=\acronymtype, style=index]
+\input{capa.tex}
+% \input{introducao.tex}
+
+% \input{objetivos.tex}
+
+% \input{metodologia.tex}
+
+
+{\footnotesize{}\printbibliography[heading=bibintoc]
+}{\footnotesize\par}
+
+% \listoftodos
+% \bibliography{bibliografia}
+\end{document}
